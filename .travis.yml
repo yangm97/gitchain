@@ -1,15 +1,8 @@
 language: go
 go:
-  - 1.2
-  - 1.2.2
-  - tip
-install: 
-  - export PATH=$PATH:$HOME/gopath/bin
+  - 1.7.1
+install:
   - make prepare
 script:
-  - make
   - make test
-
-matrix:
-  allow_failures:
-    - go: tip
+  - make all
