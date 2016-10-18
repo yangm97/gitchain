@@ -6,16 +6,17 @@ gitchain: $(SOURCES) ui/bindata.go
 	go build
 
 test:
-	go test ./keys ./block ./transaction ./db ./git
+	go test -cover ./keys ./block ./transaction ./db ./git
 
 ui/bindata.go: ui $(filter-out ui/bindata.go, $(wildcard ui/**)) Makefile
 	go-bindata -pkg=ui -o=ui/bindata.go -ignore=\(bindata.go\|\.gitignore\) -prefix=ui ui
 
 prepare:
+	go get golang.org/x/tools/cmd/cover
 	go get github.com/jteeuwen/go-bindata/go-bindata
 	go get github.com/tools/godep
 	go get github.com/stretchr/testify/assert
-	godep restore
+	godep restore -v
 
 clean:
 	rm -f ./gitchain

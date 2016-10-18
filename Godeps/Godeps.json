@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/gitchain/gitchain",
-	"GoVersion": "go1.2",
+	"GoVersion": "go1.4",
 	"GodepVersion": "v74",
 	"Deps": [
 		{
@@ -29,11 +29,6 @@
 			"ImportPath": "github.com/gitchain/wendy",
 			"Comment": "beta1-3-g7078a6b",
 			"Rev": "7078a6b268633c4a26cf4c433fdffeb0d508a6dc"
-		},
-		{
-			"ImportPath": "github.com/go-gcfg/gcfg",
-			"Comment": "v1.2.0",
-			"Rev": "27e4946190b4a327b539185f2b5b1f7c84730728"
 		},
 		{
 			"ImportPath": "github.com/gorilla/context",
@@ -85,6 +80,11 @@
 		{
 			"ImportPath": "golang.org/x/crypto/ripemd160",
 			"Rev": "14f9af67c679edd414f72f13d67c917447113df2"
+		},
+		{
+			"ImportPath": "gopkg.in/gcfg.v1",
+			"Comment": "v1.2.0",
+			"Rev": "27e4946190b4a327b539185f2b5b1f7c84730728"
 		},
 		{
 			"ImportPath": "gopkg.in/gcfg.v1/scanner",
