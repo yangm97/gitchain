@@ -24,5 +24,6 @@ clean:
 
 # Build in linux docker container. Due to the go version
 # something similar needs to be done for osx as well.
+.PHONY: docker-linux
 docker-linux:
-	docker run --rm -it -v $(shell pwd):/go/src/github.com/gitchain/gitchain -w /go/src/github.com/gitchain/gitchain golang:1.2.2 make prepare gitchain
+	docker run --rm -it -v $(shell pwd):/go/src/github.com/gitchain/gitchain -w /go/src/github.com/gitchain/gitchain golang:1.7.1 make prepare gitchain
