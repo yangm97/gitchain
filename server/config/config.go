@@ -3,7 +3,7 @@ package config
 import (
 	"runtime"
 
-	"code.google.com/p/gcfg"
+	"github.com/go-gcfg/gcfg"
 )
 
 type T struct {

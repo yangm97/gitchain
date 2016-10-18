@@ -1,16 +1,8 @@
 {
 	"ImportPath": "github.com/gitchain/gitchain",
-	"GoVersion": "go1.2.2",
+	"GoVersion": "go1.2",
+	"GodepVersion": "v74",
 	"Deps": [
-		{
-			"ImportPath": "code.google.com/p/gcfg",
-			"Rev": "c2d3050044d05357eaf6c3547249ba57c5e235cb"
-		},
-		{
-			"ImportPath": "code.google.com/p/go.crypto/ripemd160",
-			"Comment": "null-209",
-			"Rev": "23b39e4e860172e1983ded00a9d2f7e42b7683d0"
-		},
 		{
 			"ImportPath": "github.com/alecthomas/kingpin",
 			"Rev": "77d8e78083c884b5a3fef1118fc034d0a447b21f"
@@ -39,6 +31,11 @@
 			"Rev": "7078a6b268633c4a26cf4c433fdffeb0d508a6dc"
 		},
 		{
+			"ImportPath": "github.com/go-gcfg/gcfg",
+			"Comment": "v1.2.0",
+			"Rev": "27e4946190b4a327b539185f2b5b1f7c84730728"
+		},
+		{
 			"ImportPath": "github.com/gorilla/context",
 			"Rev": "1be7a086a5fd6440ef16fe96baeda0c78282b980"
 		},
@@ -51,12 +48,21 @@
 			"Rev": "5aafac3c0ea7bad725a9f1a546f17091aa61151f"
 		},
 		{
+			"ImportPath": "github.com/gorilla/rpc/json",
+			"Rev": "5aafac3c0ea7bad725a9f1a546f17091aa61151f"
+		},
+		{
 			"ImportPath": "github.com/gorilla/websocket",
 			"Rev": "10a95d14a3a215f5e2045d3dbbcd29f1ab209586"
 		},
 		{
 			"ImportPath": "github.com/inconshreveable/log15",
-			"Comment": "v1-5-gccbf579",
+			"Comment": "v1.0-5-gccbf579",
+			"Rev": "ccbf579e0146867dd4e9c175c07d9d5585fd7ef3"
+		},
+		{
+			"ImportPath": "github.com/inconshreveable/log15/term",
+			"Comment": "v1.0-5-gccbf579",
 			"Rev": "ccbf579e0146867dd4e9c175c07d9d5585fd7ef3"
 		},
 		{
@@ -75,6 +81,30 @@
 		{
 			"ImportPath": "github.com/xsleonard/go-merkle",
 			"Rev": "b7ec403cbcaf8f0d0460119eb3f98aeb19c708ca"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ripemd160",
+			"Rev": "14f9af67c679edd414f72f13d67c917447113df2"
+		},
+		{
+			"ImportPath": "gopkg.in/gcfg.v1/scanner",
+			"Comment": "v1.2.0",
+			"Rev": "27e4946190b4a327b539185f2b5b1f7c84730728"
+		},
+		{
+			"ImportPath": "gopkg.in/gcfg.v1/token",
+			"Comment": "v1.2.0",
+			"Rev": "27e4946190b4a327b539185f2b5b1f7c84730728"
+		},
+		{
+			"ImportPath": "gopkg.in/gcfg.v1/types",
+			"Comment": "v1.2.0",
+			"Rev": "27e4946190b4a327b539185f2b5b1f7c84730728"
+		},
+		{
+			"ImportPath": "gopkg.in/warnings.v0",
+			"Comment": "v0.1.1",
+			"Rev": "8a331561fe74dadba6edfc59f3be66c22c3b065d"
 		}
 	]
 }
