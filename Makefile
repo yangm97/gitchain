@@ -2,13 +2,13 @@ SOURCES=$(wildcard *.go **/*.go **/**/*.go)
 
 all: gitchain
 
-gitchain: $(SOURCES) ui/bindata.go
+gitchain: $(SOURCES) ui
 	go build
 
 test:
 	go test -cover ./keys ./block ./transaction ./db ./git
 
-ui/bindata.go: ui $(filter-out ui/bindata.go, $(wildcard ui/**)) Makefile
+ui: $(filter-out ui/bindata.go, $(wildcard ui/**)) Makefile
 	go-bindata -pkg=ui -o=ui/bindata.go -ignore=\(bindata.go\|\.gitignore\) -prefix=ui ui
 
 prepare:
