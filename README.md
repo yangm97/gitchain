@@ -23,3 +23,11 @@ Make sure you have atleast go1.4.3 installed and your GOPATH variable is pointin
 $ make prepare # (only first time or whenever Godeps file is updated)
 $ make
 ```
+
+Docker
+------
+
+```shell
+$ docker build . -t gitchain:latest 
+$ docker run --name gitchain -d -v gitchain:/data -p 3000:3000 -p 31000:31000 --restart unless-stopped gitchain
+```
